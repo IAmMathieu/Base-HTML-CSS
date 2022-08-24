@@ -1,0 +1,188 @@
+
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    /* position: sticky;
+    align-self: flex-start;
+    top: 0;
+    left: 0; */
+    flex: 1;
+    display: flex;
+    background-image: url(../images/nicole.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 40px 40px 0 40px;
+    padding-bottom: 20px;
+}
+
+.menu__header {
+    display: flex;
+    font-weight: bold;
+    align-items: flex-start;
+
+}
+
+.menu__title {
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.title__icone {
+    width: 45px;
+}
+
+.menu__article {
+    text-align: right;
+    background-color: #f9f9f944;
+    padding: 30px;
+    padding-left: 100px;
+    text-shadow: 0 0 5px #000000;
+
+}
+.strong__menu {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.italique {
+    font-style: italic;
+}
+
+.menu__article p {
+    padding-top: 20px;
+    line-height: 1.6;
+}
+
+.menu__footer {
+    text-align: right;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    text-shadow: 0 0 5px #000000;
+}
+
+.articles {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.articles__header {
+    background-color: #f9f9f9;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.articles__list {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 90px);
+}
+
+.article__item {
+    width: calc(50% - 2px);
+    /* width: 50%; */
+    height: 50%;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1500px) {
+    .article__item {
+      width: 100%;
+      height: 50%;
+      border: 1px solid #eaeaea;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+.article__author {
+    display: flex;
+    margin: 20px 20px 0 20px;
+    align-items: center;
+}
+.article__author img {
+    width: 25px;
+}
+
+.article__author p {
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px
+
+}
+
+.date {
+    font-weight: lighter;
+    color: #999;
+}
+
+.article__h4 {
+    text-transform: uppercase;
+    color: white;
+    width: 50px;
+    text-align: center;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 20px 20px 0 20px;
+}
+
+.article--team {
+    background-color: #dc5e53;
+}
+
+.article--work {
+    background-color: #0766F0;
+}
+
+.article--news {
+    background-color: #98dc62;
+}
+
+.article__title {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 20px 0 20px;
+}
+
+.article__description {
+    margin: 20px 20px 0 20px;
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.article__link {
+    margin: 20px 20px 20px 20px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.article__link:hover {
+    color: #0056b3;
+}
